@@ -112,7 +112,7 @@ int main(void)
   //Init UART2 interrupt driven RX for keyboard input
   LOG("\033[2J", 5);
   LOG("\033[H", 4);
-  LOG("Starting system\r\n", 17);
+  LOG("Starting system...OK\r\n", 22);
   LOG("Initializing UART1\r\n", 22);
   LOG("Initializing UART2\r\n", 22);
   HAL_UART_Receive_IT(&huart1, receiveBuffer, 32);
